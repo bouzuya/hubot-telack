@@ -1,0 +1,45 @@
+{
+  "name": "hubot-telack",
+  "description": "A Hubot script for telack",
+  "version": "0.0.0",
+  "author": {
+    "name": "bouzuya",
+    "email": "m@bouzuya.net",
+    "url": "http://bouzuya.net"
+  },
+  "bugs": {
+    "url": "https://github.com/bouzuya/hubot-telack/issues"
+  },
+  "dependencies": {
+    "es6-promise": "^2.1.1",
+    "google-sheets-api": "https://github.com/bouzuya/google-sheets-api/archive/0.1.0.tar.gz",
+    "hubot-config": "^1.0.1"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "hubot": "^2.8.0",
+    "hubot-script-scripts": "https://github.com/bouzuya/hubot-script-scripts/archive/1.0.2.tar.gz",
+    "power-assert": "^0.10.2",
+    "sinon": "^1.12.2"
+  },
+  "homepage": "https://github.com/bouzuya/hubot-telack",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bouzuya/hubot-telack.git"
+  },
+  "scripts": {
+    "build": "hss build",
+    "clean": "hss clean",
+    "coveralls": "hss coveralls",
+    "robot": "HUBOT_SHELL_USER_NAME='bouzuya' hubot --adapter shell --name hubot",
+    "robot-debug": "HUBOT_LOG_LEVEL='debug' HUBOT_SHELL_USER_NAME='bouzuya' hubot --adapter shell --name hubot",
+    "test": "hss test",
+    "watch": "hss watch"
+  }
+}
