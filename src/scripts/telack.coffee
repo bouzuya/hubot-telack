@@ -106,7 +106,7 @@ module.exports = (robot) ->
       else
         addresses.push { number, address }
     else
-      addresses = addresses.filter((i) -> i.number isnt number)[0]
+      addresses = addresses.filter((i) -> i.number isnt number)
     save()
     .then ->
       res.send 'OK. updated.'
